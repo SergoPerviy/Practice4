@@ -26,8 +26,8 @@ void clear_arr(T arr[], int lenght, int key) {
 
 template <typename T>
 int index_sum(T arr1[], int lenght1, T arr2[], int lenght2, int index) {
-	if (index > lenght1 - 1 || index > lenght2 - 1)
-		return std::cout << "ERROR ", -0;
+	if (index > lenght1 - 1 || index > lenght2 - 1 || index < 0)
+		return std::cout << "ERROR ", 0;
 	
 	return arr1[index]+arr2[index];
 }
